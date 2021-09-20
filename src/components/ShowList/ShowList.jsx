@@ -1,14 +1,8 @@
 import React from 'react'
-import { styled } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import PropTypes from 'prop-types'
 import Show from '../Show'
 import SkeletonCardList from '../SkeletonCardList'
-import Typography from '@material-ui/core/Typography'
-
-const HeaderText = styled(Typography)({
-    color: 'white',
-})
 
 const renderShowCard = eventOnClickShow => (show) => {
     return (
@@ -33,12 +27,9 @@ const ShowList = ({showList, loading, onClickShow}) => {
                     loading ?
                         <SkeletonCardList count={6} />
                     :
-                    showList.length > 0 ?
+                    showList.length > 0 &&
                         showList.map(show => renderShowCard(onClickShow)(show))
-                        :
-                        <HeaderText variant="h5" align='center' gutterBottom>
-                            No results found, try again!
-                        </HeaderText>
+                        
                 }
             </Grid>
         </div>

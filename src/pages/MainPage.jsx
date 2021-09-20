@@ -44,8 +44,10 @@ const MainPage = () => {
     const [allShows, setAllShows] = useState([])
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(false)
+    const [noResults, setNoResults] = useState(false)
 
     const doSearch = (searchTerm) => {
+        setNoResults(false)
         setQuery(searchTerm)
     }
 
@@ -56,7 +58,7 @@ const MainPage = () => {
 
             const { data } = response
             
-            setAllShows(data.map(item => item.show))
+            data.length > 0 ? setAllShows(data.map(item => item.show)) : setNoResults(true)
 
             setLoading(false)
         } catch (error) {
@@ -90,7 +92,15 @@ const MainPage = () => {
                     <SearchForm onSearchHandler={doSearch}  />
                     <br />
                     {error && <Alert severity="error" onClose={() => setError(null)}>{error}</Alert>}
-                    <ShowList showList={allShows} onClickShow={onClickHandler} loading={loading} />
+
+                    {
+                        noResults ?
+                            <HeaderText variant="h5" align='center' gutterBottom>
+                                No results found, try again!
+                            </HeaderText>
+                            :
+                            <ShowList showList={allShows} onClickShow={onClickHandler} loading={loading} />
+                    }
                 </Container>
             </ListWrapper>
         </AppFrame>
