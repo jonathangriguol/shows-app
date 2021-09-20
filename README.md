@@ -8,6 +8,8 @@ I implemented a API helper and a "service" layer to communicate with the API res
 I used the "styledComponent" concept from Material-UI to stylize some components.
 React Router to manage the navigation, and Jest for unit testin.. I just did a few relevant cases because a lack of time :'( 
 
+Tip: Try playing the app using Slow 3G profile in performance tab to see how Skeletons works, cut internet to show error management, etc.
+
 Visit my personal website: [https://jonathangriguol.com.ar](www.jonathangriguol.com.ar)
 
 ## Getting Started with 
