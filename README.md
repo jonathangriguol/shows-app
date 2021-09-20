@@ -2,6 +2,11 @@
 
 This technical test was boostraped with create-react-app which provides a full featured scaffold for a scalable \
 project from scratch. ✔️
+I used a bunch of tools like Material-UI to implement a fancy and responsive layout. Storybook to get components well documented and
+easy to test in isolation mode.
+I implemented a API helper and a "service" layer to communicate with the API rest using Axios.
+I used the "styledComponent" concept from Material-UI to stylize some components.
+React Router to manage the navigation, and Jest for unit testin.. I just did a few relevant cases because a lack of time :'( 
 
 Visit my personal website: [https://jonathangriguol.com.ar](www.jonathangriguol.com.ar)
 
