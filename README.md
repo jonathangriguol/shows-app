@@ -3,7 +3,7 @@
 This technical test was boostraped with create-react-app which provides a full featured scaffold for a scalable \
 project from scratch. ✔️
 
-Visit my personal website: 
+Visit my personal website: [https://jonathangriguol.com.ar] (www.jonathangriguol.com.ar)
 
 ## Getting Started with 
 💯 In the project directory, you must run:
@@ -17,7 +17,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 🏁 Runs the app in the development mode.\
-Open [https://jonathangriguol.com.ar](https://jonathangriguol.com.ar) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
