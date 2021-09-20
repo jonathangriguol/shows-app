@@ -3,7 +3,7 @@
 This technical test was boostraped with create-react-app which provides a full featured scaffold for a scalable \
 project from scratch. ✔️
 
-Visit my personal website: [https://jonathangriguol.com.ar] (www.jonathangriguol.com.ar)
+Visit my personal website: [https://jonathangriguol.com.ar](www.jonathangriguol.com.ar)
 
 ## Getting Started with 
 💯 In the project directory, you must run:
